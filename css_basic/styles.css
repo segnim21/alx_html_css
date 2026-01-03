@@ -1,11 +1,22 @@
+header,ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 body{
     display: flex;
     flex-direction: column;
+    background-color: aquamarine;
+    background: none;
 }
 main{
     display: flex;
     flex-direction: row;
     flex: auto;
+    color: aqua;
 }
 article{
     flex:2;
@@ -14,4 +25,27 @@ article{
 aside{
     flex:1;
     overflow-y: auto;
+    color: rgb(46, 173, 131);
+    background-color: rgb(170, 192, 42);
+    font-size: 40px;
+}
+table,th,td {
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+h1{
+    color: greenyellow;
+    text-decoration: wavy;
+    font-size: 100px;}
+    
+h1:hover{
+color: black;
+cursor: pointer;
+}
+h2{ color: rgb(26, 194, 157);
+    font-size: 50px;
+}
+h2:hover{
+    color: rgb(26, 2, 2);
+    cursor: pointer;
 }
