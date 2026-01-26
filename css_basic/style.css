@@ -1,0 +1,88 @@
+:root{
+    --main-bg-color:red;
+}
+
+/*body{
+    background-color: #555555;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:1000 ;
+    line-height: 1.8em;
+    margin: 0;
+}*/
+.box{
+    background-color: yellowgreen;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom:5px;
+    margin-left: 10px;
+    margin-left: 10px;
+    border-right: 5px red solid;
+    border-left: 5px blue solid;
+    border-bottom: 5px yellow solid;
+    border-top: 5px black solid;
+    border-bottom-width: 10px;
+    color: var(--main-bg-color);
+}
+:root{
+    --main-cl:blue;
+}
+.box{
+    color: var(--main-cl);
+}
+.fox{
+    background-color: lightblue;
+    border: 10px solid darkblue 10px solid greenyellow 10px solid pink 10px solid rebeccapurple;
+    padding: 150px;
+    margin: 1em 0;
+}
+.men{
+    font-size: 1em;
+}
+.px{
+    width: 400px;
+}
+.vw{
+    width: 40vw;
+}
+.em{
+    width: 40em;
+}
+.boxx{
+    border: 5px solid rgb(219, 22, 22);
+    padding: 3px;
+    margin: 1px;
+}
+.one{
+    color: #1cce60;
+    font-size: 20px;
+    font-weight: 400;
+    border: 5px solid blue;
+    width: 300px;
+    text-decoration: underline red;
+}
+.two{
+    color: #530ed3;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: overline green;
+    line-height: 35;
+}
+.three{
+ color: #aaa231;
+ font-size: 35px;
+ font-weight: 500;
+}
+.mee{
+    text-decoration:line-through;
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing:4px;
+}
+.mee::selection{
+    background-color: blue;
+}
+.mee:hover{
+    color: red;
+}
