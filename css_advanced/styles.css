@@ -166,3 +166,108 @@ h2{
    font-family: 'Source Sans Pro', sans-serif;
    font-weight: italic;
 }
+
+/*VIDEOS Section*/
+
+:root{
+    --pink-color: #C271FF;
+}
+
+/* SECTION */
+.videos{
+    padding: 80px 150px;
+    text-align: center;
+}
+
+.videos h2{
+    margin-bottom: 60px;
+    font-size: 32px;
+}
+
+.videos h2 span{
+    color: var(--pink-color);
+}
+
+/* CARDS CONTAINER */
+.video-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* CARD */
+.card{
+    width: 250px;
+    text-align: left;
+}
+
+/* IMAGE */
+.image-wrapper{
+    position: relative;
+}
+
+.image-wrapper img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* PLAY BUTTON */
+.play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.play-btn i{
+    color: var(--pink-color);
+    font-size: 18px;
+}
+
+/* AUTHOR */
+.author{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.author img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* STARS + DURATION */
+.stars-duration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars{
+    display: flex;
+    gap: 5px;
+    color: var(--pink-color);
+}
+.star{
+   color: rgb(216, 212, 212);
+}
+.duration{
+    margin: 0;
+    font-size: 14px;
+    color: var(--pink-color);
+    opacity: 0.7;
+}
