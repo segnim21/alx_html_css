@@ -302,3 +302,25 @@ h2{
 h2 span{
    color: var(--pink-color);
 }
+
+.faq{
+   padding: 80px 150px;
+}
+.faq h2{
+   text-align: center;
+   margin-bottom: 60px;
+}
+.faq-container{
+   display: flex;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px 80px;
+}
+.faq-item{
+   margin-bottom: 10px;
+   
+}
+.faq h2{
+   font-size: 60px;
+   font-weight: lighter;
+   font-family: 'Source Sans Pro', sans-serif;
+}
