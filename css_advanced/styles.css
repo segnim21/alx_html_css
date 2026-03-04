@@ -302,7 +302,7 @@ h2{
 h2 span{
    color: var(--pink-color);
 }
-
+/*FAQ section*/
 .faq{
    padding: 80px 150px;
 }
@@ -323,4 +323,31 @@ h2 span{
    font-size: 60px;
    font-weight: lighter;
    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*FOOTER*/
+.footer{
+   background-color: var(--black-color);
+   color: var(--white-color);
+   padding: 40px 150px;
+}
+.footer-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer-left{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-size: 18px;
+}
+.footer-right i{
+   margin-left: 15px;
+   cursor: pointer;
+}
+.copyright{
+   text-align: center;
+   margin-top: 30px;
+   opacity: 0.7;
 }
