@@ -135,3 +135,34 @@ h2{
    font-size: 14px;
    opacity: 0.8;
 }
+
+/*quotes section*/
+.quotes{
+   background: linear-gradient(90deg, #C271FF, #8A5CF6);
+   padding: 80px 150px;
+   color: var(--white-color);
+}
+
+.quotes-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 80px;
+}
+.quotes img{
+   width: 160px;
+   border-radius: 50%;
+}
+
+.quotes-text h3{
+   margin: 0;
+   font-weight: bold;
+   font-size: 22px;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+.quotes-text p{
+   opacity: 0.8;
+   font-size: 22px;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: italic;
+}
