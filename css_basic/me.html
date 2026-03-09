@@ -1,33 +1,32 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css"> 
-        <title>css  cheat sheet </title>
-    </head>
-    <body>
-        <h1>hello world</h1>
-        <p class="box">Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Dignissimos, ratione qui at
-             corrupti deserunt quisquam aliquam quam tempore, 
-             ipsum magni eos obcaecati nam odit animi. Atque 
-             aliquid fuga cupiditate rerum.</p>
-             <div class="men">
-                <div class="fox px">I am 200px wide</div>
-                <div class="fox vw">I am 10vw wide</div>
-                <div class="fox em">I am 10em wide</div>
-             </div>
-             <ol>
-                <li class="boxx one">rgb value</li>
-                <li class="boxx two">hex decimal</li>
-                <li class="boxx three">color name</li>
-             </ol>
-             <p class="mee">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Eligendi, voluptatem error quod magnam veniam, suscipit impedit at necessitatibus quis fuga provident, aut
-                   unde atque hic reiciendis laborum quae fugit! Sunt velit, sed fugit, amet libero aliquid soluta suscipit dolores
-                   quam itaque laborum ratione nihil, optio accusamus ipsa laboriosam architecto! A aliquam rerum soluta facere commodi, aut 
-                   et quasi voluptatum qui laborum iusto, cumque illum praesentium ullam eius pariatur quisquam facilis ea beatae sunt quas? 
-                   Consequatur perspiciatis quos quisquam dolorum ab! Itaque magnam quaerat exercitationem quae error minima consequatur voluptate,
-                   possimus quas, sunt rem id similique! Mollitia cupiditate quos fugiat tempore?
-             </p>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tailwind Page</title>
+  <!-- Include Tailwind from CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 p-8">
+
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://via.placeholder.com/300" alt="Placeholder">
+      </div>
+      <div class="p-8">
+        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+        <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+        <button class="mt-4 px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-700 transition">
+          Read more
+        </button>
+      </div>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Submit
+</button> 
+    </div>
+  </div>
+
+</body>
 </html>
