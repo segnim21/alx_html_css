@@ -117,7 +117,7 @@ body {
     display: none;
 }
 
-/*  WHAT WE DO SECTION  */
+/* ========== WHAT WE DO SECTION ========== */
 .what-we-do {
     padding: 80px 0;
     background-color: white;
@@ -179,7 +179,8 @@ body {
     line-height: 24px;
     color: var(--dark-text);
 }
-/* OUR RESULTS SECTION - IMAGE VERSION  */
+
+/* ========== OUR RESULTS SECTION ========== */
 .our-results {
     background-image: url(images/background\ \(2\).png);
     background-size: cover;
@@ -194,7 +195,7 @@ body {
     color: var(--text-color);
 }
 
-/* Results Grid */
+/* Results Grid - Desktop: 4 columns */
 .results-grid {
     display: flex;
     justify-content: center;
@@ -211,31 +212,26 @@ body {
     max-width: 250px;
 }
 
-/* Pentagon Image Container */
-.pentagon-image {
+/* Pentagon Shape */
+.pentagon {
     position: relative;
     width: 200px;
     height: 200px;
     margin: 0 auto 20px;
+    background-color: var(--main-color);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
 }
 
-.pentagon-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Keeps shape proportions */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+.pentagon:hover {
+    transform: scale(1.05);
 }
 
-/* Content inside pentagon - sits on top of image */
-.pentagon-image .pentagon-content {
-    position: relative;
-    z-index: 2;
+/* Content inside pentagon */
+.pentagon-content {
     text-align: center;
     color: white;
     padding: 20px;
@@ -255,65 +251,7 @@ body {
     margin: 0;
 }
 
-/* Hover effect */
-.pentagon-image:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-/*  RESPONSIVE */
-@media (min-width: 481px) and (max-width: 768px) {
-    .results-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-    
-    .result-item {
-        max-width: 100%;
-        width: 100%;
-    }
-    
-    .pentagon-image {
-        width: 180px;
-        height: 180px;
-        margin: 0 auto;
-    }
-    
-    .percentage {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .results-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        padding: 0 20px;
-    }
-    
-    .result-item {
-        max-width: 250px;
-        width: 100%;
-        flex: none;
-    }
-    
-    .pentagon-image {
-        width: 180px;
-        height: 180px;
-        margin: 0 auto;
-    }
-    
-    .percentage {
-        font-size: 36px;
-    }
-}
-/*  HEADER RESPONSIVE  */
+/* ========== HEADER RESPONSIVE ========== */
 @media (max-width: 768px) {
     .nav {
         flex-wrap: wrap;
@@ -357,7 +295,7 @@ body {
     }
 }
 
-/* WHAT WE DO RESPONSIVE */
+/* ========== WHAT WE DO RESPONSIVE ========== */
 @media (max-width: 768px) {
     .what-we-do {
         padding: 60px 0;
@@ -400,6 +338,86 @@ body {
     
     .feature-item {
         max-width: 250px;
+    }
+}
+
+/* ========== RESULTS SECTION RESPONSIVE ========== */
+
+/* Tablet: 2 columns (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .our-results {
+        padding: 60px 0;
+    }
+    
+    .results-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .result-item {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .pentagon {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    
+    .percentage {
+        font-size: 40px;
+    }
+}
+
+/* Mobile: 1 column (max-width: 480px) */
+@media (max-width: 480px) {
+    .our-results {
+        padding: 50px 0;
+    }
+    
+    .results-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 20px;
+    }
+    
+    .result-item {
+        max-width: 250px;
+        width: 100%;
+        flex: none;
+    }
+    
+    .pentagon {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    
+    .percentage {
+        font-size: 36px;
+    }
+    
+    .pentagon-content p {
+        font-size: 13px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 320px) {
+    .pentagon {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .percentage {
+        font-size: 32px;
     }
 }
 /* CONTACT US SECTION */
@@ -511,7 +529,7 @@ body {
     transform: translateY(-5px);
 }
 
-/* FOOTER SECTION  */
+/* ========== FOOTER SECTION ========== */
 .footer {
     background-color: var(--dark-text); /* #071629 */
     padding: 80px 0 30px;
@@ -555,7 +573,7 @@ body {
     margin: 0;
 }
 
-/*  FOOTER RESPONSIVE*/
+/* ========== FOOTER RESPONSIVE ========== */
 @media (max-width: 768px) {
     .footer {
         padding: 60px 0 20px;
